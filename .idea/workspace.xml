@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7242916-68d8-4288-ac0b-2b31a597992e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoublyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Station.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Trip.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TypeOfTicket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Zone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DoublyLinkedListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TrainLineManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TrainLineManager.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="b7242916-68d8-4288-ac0b-2b31a597992e" name="Default" comment="Added core classes to project :zap:">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/goncalo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitgnore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitgnore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../2018 PL's/PL2_Generics_initial/test/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,14 +42,23 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DoublyLinkedListTest.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="DoublyLinkedListTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/DoublyLinkedListTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="793">
-                  <caret line="215" column="19" lean-forward="true" selection-start-line="215" selection-start-column="19" selection-end-line="215" selection-end-column="19" />
+                <state relative-caret-position="268">
+                  <caret line="180" column="4" lean-forward="true" selection-start-line="180" selection-start-column="4" selection-end-line="180" selection-end-column="4" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitgnore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitgnore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="7" selection-start-column="7" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -94,7 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitgnore" />
         <option value="$PROJECT_DIR$/src/main/java/main.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/DoublyLinkedList/DoublyLinkedList.java" />
@@ -106,6 +105,7 @@
         <option value="$PROJECT_DIR$/src/main/java/Trip.java" />
         <option value="$PROJECT_DIR$/src/main/java/Station.java" />
         <option value="$PROJECT_DIR$/src/test/java/DoublyLinkedListTest.java" />
+        <option value="$PROJECT_DIR$/.gitgnore" />
       </list>
     </option>
   </component>
@@ -305,12 +305,34 @@
       <option name="presentableId" value="Default" />
       <updated>1539218820497</updated>
       <workItem from="1539218821703" duration="1025000" />
-      <workItem from="1539263749554" duration="4438000" />
+      <workItem from="1539263749554" duration="4707000" />
     </task>
+    <task id="LOCAL-00001" summary="Deleted main no need for it and added dependecies :zap:">
+      <created>1539271225106</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539271225106</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added doubly linked list to our project :zap:">
+      <created>1539271328630</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1539271328630</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added core classes to project :zap:">
+      <created>1539271363861</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1539271363861</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5463000" />
+    <option name="totallyTimeSpent" value="5732000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -382,19 +404,17 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Deleted main no need for it and added dependecies :zap:" />
+    <MESSAGE value="Added doubly linked list to our project :zap:" />
+    <MESSAGE value="Added core classes to project :zap:" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added core classes to project :zap:" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/.gitgnore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -480,11 +500,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DoublyLinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="793">
-          <caret line="215" column="19" lean-forward="true" selection-start-line="215" selection-start-column="19" selection-end-line="215" selection-end-column="19" />
+        <state relative-caret-position="268">
+          <caret line="180" column="4" lean-forward="true" selection-start-line="180" selection-start-column="4" selection-end-line="180" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitgnore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
