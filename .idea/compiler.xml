@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="TrainLineManager" target="1.5" />
+      <module name="TrainLineManager" target="7" />
     </bytecodeTargetLevel>
   </component>
 </project>
