@@ -1,18 +1,31 @@
 public class Station {
 
     private String name;
-    private Zone zone;
     private int num;
 
-    public Station(String name, Zone zone, int num) {
+    public Station(String name, int num) {
         this.name = name;
-        this.zone = zone;
         this.num = num;
     }
 
     public Station(Station other) {
         this.name = other.name;
-        this.zone = other.zone;
         this.num = other.num;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getNum() {
+        return num;
+    }
+
+    @Override
+    public String toString() {
+        return "Station{" +
+                "name='" + name + '\'' +
+                ", num=" + num +
+                '}';
     }
 }
