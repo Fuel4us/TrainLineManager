@@ -2,6 +2,7 @@ public class Station {
 
     private String name;
     private int num;
+    private String zone;
 
     public Station(String name, int num) {
         this.name = name;

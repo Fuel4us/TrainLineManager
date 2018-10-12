@@ -152,7 +152,7 @@ public class DoublyLinkedList<E> implements Iterable<E>, Cloneable {
     /**
      * Adds an element e to the linked list between the two given nodes.
      */
-    private void addBetween(E e, Node<E> predecessor, Node<E> successor) {
+    public void addBetween(E e, Node<E> predecessor, Node<E> successor) {
         Node between_node = new Node(e, null, null);
         predecessor.setNext(between_node);
         between_node.setPrev(predecessor);
@@ -165,7 +165,7 @@ public class DoublyLinkedList<E> implements Iterable<E>, Cloneable {
     /**
      * Removes a given node from the list and returns its content.
      */
-    private E remove(Node<E> node) {
+    public E remove(Node<E> node) {
         Node previous_ref = node.getPrev();
         Node next_ref = node.getNext();
         previous_ref.setNext(next_ref);

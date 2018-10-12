@@ -1,8 +1,10 @@
+ReadStations.class
 Ticket.class
 DoublyLinkedList$Node.class
 Station.class
 TypeOfTicket.class
 DoublyLinkedList.class
 Trip.class
+Line.class
+ReadTrip.class
 DoublyLinkedList$DoublyLinkedListIterator.class
-Zone.class

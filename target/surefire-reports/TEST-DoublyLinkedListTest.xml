@@ -69,8 +69,8 @@
   <testcase classname="DoublyLinkedListTest" name="testLast" time="0"/>
   <testcase classname="DoublyLinkedListTest" name="testSize" time="0"/>
   <testcase classname="DoublyLinkedListTest" name="testRemoveFirst" time="0"/>
-  <testcase classname="DoublyLinkedListTest" name="testAddFirst" time="0.001"/>
+  <testcase classname="DoublyLinkedListTest" name="testAddFirst" time="0"/>
   <testcase classname="DoublyLinkedListTest" name="testRemoveLast" time="0"/>
   <testcase classname="DoublyLinkedListTest" name="testEquals" time="0"/>
-  <testcase classname="DoublyLinkedListTest" name="testIsEmpty" time="0"/>
+  <testcase classname="DoublyLinkedListTest" name="testIsEmpty" time="0.001"/>
 </testsuite>
