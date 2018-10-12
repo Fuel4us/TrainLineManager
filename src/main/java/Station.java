@@ -4,14 +4,16 @@ public class Station {
     private int num;
     private String zone;
 
-    public Station(String name, int num) {
+    public Station(String name, int num, String zone) {
         this.name = name;
         this.num = num;
+        this.zone = zone;
     }
 
     public Station(Station other) {
         this.name = other.name;
         this.num = other.num;
+        this.zone = other.zone;
     }
 
     public String getName() {

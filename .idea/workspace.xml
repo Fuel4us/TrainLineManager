@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b7242916-68d8-4288-ac0b-2b31a597992e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReadTrip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReadTrip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TypeOfTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TypeOfTicket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReadStations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReadStations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Station.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../2018 PL's/PL2_Generics_initial/test/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,18 +17,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ReadStations.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ReadStations.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ReadStations.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="ReadTrip.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ReadTrip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="285">
+              <caret line="19" column="80" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Station.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Station.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Line.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Line.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="17" selection-start-column="13" selection-end-column="17" />
+              <folding>
+                <element signature="e#283#284#0" expanded="true" />
+                <element signature="e#322#323#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,12 +76,12 @@
         <option value="$PROJECT_DIR$/src/test/java/DoublyLinkedListTest.java" />
         <option value="$PROJECT_DIR$/.gitgnore" />
         <option value="$PROJECT_DIR$/src/main/java/Zone.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Station.java" />
         <option value="$PROJECT_DIR$/src/main/java/DoublyLinkedList.java" />
         <option value="$PROJECT_DIR$/src/main/java/Line.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ReadStations.java" />
         <option value="$PROJECT_DIR$/src/main/java/TypeOfTicket.java" />
         <option value="$PROJECT_DIR$/src/main/java/ReadTrip.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Station.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ReadStations.java" />
       </list>
     </option>
   </component>
@@ -266,7 +283,7 @@
       <workItem from="1539218821703" duration="1025000" />
       <workItem from="1539263749554" duration="4822000" />
       <workItem from="1539275925964" duration="1405000" />
-      <workItem from="1539357738567" duration="3504000" />
+      <workItem from="1539357738567" duration="4525000" />
     </task>
     <task id="LOCAL-00001" summary="Deleted main no need for it and added dependecies :zap:">
       <created>1539271225106</created>
@@ -303,11 +320,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539277069193</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Z1 added :zap:">
+      <created>1539363411872</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1539363411872</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10756000" />
+    <option name="totallyTimeSpent" value="11777000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -344,30 +368,30 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32969698" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20529328" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21001221" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32969698" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info id="Favorites" order="6" side_tool="true" />
@@ -385,7 +409,8 @@
     <MESSAGE value="Added core classes to project :zap:" />
     <MESSAGE value="Gitignore update :ok_hand: :bulb:" />
     <MESSAGE value="Final core classes done :zap:" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final core classes done :zap:" />
+    <MESSAGE value="Z1 added :zap:" />
+    <option name="LAST_COMMIT_MESSAGE" value="Z1 added :zap:" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/DoublyLinkedList.java">
@@ -414,7 +439,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ReadStations.java">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Ticket.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -458,13 +489,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ReadTrip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Station.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -532,19 +557,6 @@
     <entry file="file://$PROJECT_DIR$/stations.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TypeOfTicket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-          <folding>
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Trip.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -560,33 +572,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Line.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Station.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DoublyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="167" column="10" selection-start-line="167" selection-start-column="10" selection-end-line="167" selection-end-column="10" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ReadStations.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Ticket.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -603,8 +594,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ReadTrip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TypeOfTicket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Line.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="13" selection-end-column="17" />
+          <folding>
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Station.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ReadStations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="80" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
