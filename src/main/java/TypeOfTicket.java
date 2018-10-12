@@ -9,6 +9,7 @@ public class TypeOfTicket {
     }
 
     private void returnNumber(String type) {
+        if (type.equalsIgnoreCase("z1")) num = 1;
         if (type.equalsIgnoreCase("z2")) num = 2;
         if (type.equalsIgnoreCase("z3")) num = 3;
         if (type.equalsIgnoreCase("z4")) num = 4;
