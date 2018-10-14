@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ReadTrip {
-    
+
         public static ArrayList<Trip> tripList = new ArrayList<>();
 
-    
-        public static void ReadTrip(String filePath) throws FileNotFoundException {
+
+        public ArrayList<Trip> ReadTrip(String filePath) throws FileNotFoundException {
 
         Scanner scanner = new Scanner(new File(filePath));
 
@@ -25,5 +25,7 @@ public class ReadTrip {
                 tripList.add(trip);
             }
         }
+
+        return tripList;
         }
         }

@@ -10,6 +10,8 @@ public class Trip {
         this.finalStation = finalStation;
     }
 
+    public Trip(){}
+
     public Ticket getTicket() {
         return ticket;
     }

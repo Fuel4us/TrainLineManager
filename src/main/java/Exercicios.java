@@ -1,10 +1,4 @@
-
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeMap;
-import javafx.scene.Node;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -16,44 +10,52 @@ import javafx.scene.Node;
  * @author Miura
  */
 public class Exercicios {
-    
-    //caso as estaçoes não estivessem todas preenchidas , seria possivel utilizar a lista de stations para percorrer a lista de estações (em vez de j--) , j-- parte do principio que todos os numeros estao preenchidos 
-    public void numUtilizadores(ArrayList<Trip> list) {
+
+    //caso as estaï¿½oes nï¿½o estivessem todas preenchidas , seria possivel utilizar a lista de stations para percorrer a lista de estaï¿½ï¿½es (em vez de j--) , j-- parte do principio que todos os numeros estao preenchidos
+    public ArrayList<Integer> numUtilizadores(ArrayList<Trip> list) {
         int i;
         int j;
-        ArrayList<Integer> countList = new ArrayList<>(); //armazena o numero de pessoas que passaram em cada estaçao , cada estaçao é assinalada pela posiçao no vetor
+        ArrayList<Integer> countList = new ArrayList<>(); //armazena o numero de pessoas que passaram em cada estaï¿½ao , cada estaï¿½ao ï¿½ assinalada pela posiï¿½ao no vetor
 
-        for (i = 0; i < list.size(); i++) { //percorre a lista de trips 
-            countList.clear();
-            if (list.get(i).getOriginStation() > list.get(i).getFinalStation()) { //confirma se a estaçao de origem esta depois ou antes da estação final
-                j = list.get(i).getOriginStation();
-                do {
-                    countList.set(j, (countList.get(j) + 1));//adidiciona um na posição da station
-                    j--; //passa para a estaçao seguinte
+        for(int k = 0; k < 8; k++) {
+          countList.add(k, 0);
+        }
 
-                } while (list.get(i).getFinalStation() == j); //enquanto nao chegar a estacao final
-            } else { //no caso da estaçao de origem estar antes da estacao final
+        for (i = 0; i < list.size(); i++) { //percorre a lista de trips
+            if (list.get(i).getOriginStation() > list.get(i).getFinalStation()) { //confirma se a estaï¿½ao de origem esta depois ou antes da estaï¿½ï¿½o final
                 j = list.get(i).getOriginStation();
+                countList.set(j, (countList.get(j) + 1));
                 do {
-                    countList.set(j, (countList.get(j) + 1));
+                    j--; //passa para a estaï¿½ao seguinte
+                    countList.set(j, (countList.get(j) + 1));//adidiciona um na posiï¿½ï¿½o da station
+
+                } while (list.get(i).getFinalStation() != j); //enquanto nao chegar a estacao final
+            } else { //no caso da estaï¿½ao de origem estar antes da estacao final
+                j = list.get(i).getOriginStation();
+                countList.set(j, (countList.get(j) + 1));
+                do {
                     j++;
+                    countList.set(j, (countList.get(j) + 1));
 
-                } while (list.get(i).getFinalStation() == j);
+                } while (list.get(i).getFinalStation() != j);
             }
         }
 
+        i = 0;
         for (Integer count : countList) {
-            System.out.println("na estação " + i++ + " passaram " + count + " pessoas");
+            System.out.println("na station " + i++ + " passaram " + count + " pessoas");
         }
+
+        return countList;
 
     }
 
-    //neste exercicio seria possivel utilizar um map ou uma matriz para guardar multiplas sequencias maximas 
+    //neste exercicio seria possivel utilizar um map ou uma matriz para guardar multiplas sequencias maximas
     public void sequencia(DoublyLinkedList<Station> list, TypeOfTicket type) {
         ArrayList<String> countList = new ArrayList<>(); //contador de zonas percorridas
         ArrayList<Integer> stationList = new ArrayList<>(); //maior sequencia de estacoes possivel entre X zonas seguidas
         ArrayList<Integer> finalStationList = new ArrayList<>(); //maior sequencia possivel entre qualquer X zonas seguidas
-        
+
         DoublyLinkedList.Node<Station> station = list.getFirstNode();
         int i;
         int flag = 0;
@@ -72,35 +74,35 @@ public class Exercicios {
                 if (flag == 0) {
                     countList.add(station.getElement().getZone()); //ou um contador simples
                 }
-                station = list.getNextNode(station); 
-            } while (countList.size() < type.getNum() + 1); //repete ate ao maximo de estaçoes dentro do numero limite de zonas
+                station = list.getNextNode(station);
+            } while (countList.size() < type.getNum() + 1); //repete ate ao maximo de estaï¿½oes dentro do numero limite de zonas
             String temp = station.getElement().getZone();
             do{
-            station = list.getNextNode(station); //volta a calcular a maior sequencia para a primeira estaçao da proxima zona
+            station = list.getNextNode(station); //volta a calcular a maior sequencia para a primeira estaï¿½ao da proxima zona
             }while(station.getElement().getZone().compareTo(temp) != 0);
             if (stationList.size() > finalStationList.size()) { //guarda a sequencia maior em finalStationList
                                 finalStationList = stationList;
 
             }
         }
-        for (Integer count : finalStationList) { //imprime a maior sequencia 
+        for (Integer count : finalStationList) { //imprime a maior sequencia
             System.out.println(count + "\n");
         }
 
     }}
 
     public void transgressao(ArrayList<Trip> list, DoublyLinkedList<Station> lista) {
-        DoublyLinkedList.Node<Station> station = lista.getFirstNode().getPrev(); 
-        ArrayList<String> countList = new ArrayList<>(); 
+        DoublyLinkedList.Node<Station> station = lista.getFirstNode().getPrev();
+        ArrayList<String> countList = new ArrayList<>();
         int i;
         int flag;
         for (i = 0; i < list.size(); i++) { //percorre a lista de trips
             countList.clear();
-            if (list.get(i).getOriginStation() > list.get(i).getFinalStation()) { //verifica se a station de origem esta depois do destino 
+            if (list.get(i).getOriginStation() > list.get(i).getFinalStation()) { //verifica se a station de origem esta depois do destino
 
                 do {
                     station = lista.getNextNode(station);
-                } while (station.getElement().getNum() != list.get(i).getFinalStation()); //percorre a lista de stations ate chegar ao destino 
+                } while (station.getElement().getNum() != list.get(i).getFinalStation()); //percorre a lista de stations ate chegar ao destino
                 countList.add(station.getElement().getZone());
                 do {
                     station = lista.getNextNode(station);
