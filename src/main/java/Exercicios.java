@@ -79,7 +79,7 @@ public class Exercicios {
 }
     
         public void transgressao(ArrayList<Trip> list){
-        int i;kkkk
+        int i;
             for(i=0;i<list.size();i++){
                 list.get(i).getTicket().getType().getNum();
             }

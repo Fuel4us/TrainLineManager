@@ -23,6 +23,10 @@ public class Station {
     public int getNum() {
         return num;
     }
+    
+        public String getZone() {
+        return zone;
+    }
 
     @Override
     public String toString() {

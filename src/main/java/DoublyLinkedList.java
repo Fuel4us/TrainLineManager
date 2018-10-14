@@ -76,6 +76,13 @@ public class DoublyLinkedList<E> implements Iterable<E>, Cloneable {
         }
         return trailer.prev.getElement();
     }
+        public Node<E> getNextNode(Node<E> predecessor) {
+        return predecessor.next;
+    }
+        
+                public Node<E> getFirstNode() {
+        return header.next;
+    }
 
 // public update methods
     /**
@@ -299,7 +306,7 @@ public class DoublyLinkedList<E> implements Iterable<E>, Cloneable {
     }
 
 //---------------- nested Node class ----------------
-    private static class Node<E> {
+    public static class Node<E> {
 
         private E element;      // reference to the element stored at this node
         private Node<E> prev;   // reference to the previous node in the list
