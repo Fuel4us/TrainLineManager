@@ -13,7 +13,7 @@ public class ReadStations {
     public static ArrayList<Station> stations = new ArrayList<>();
 
 
-    public static void ReadStation(String filePath) throws FileNotFoundException {
+    public DoublyLinkedList<Station> ReadStation(String filePath) throws FileNotFoundException {
 
         Scanner scanner = new Scanner(new File(filePath));
 
@@ -38,7 +38,7 @@ public class ReadStations {
         doubleLinkedList.addFirst(stations.get(i));
         }
         
-        
+        return doubleLinkedList;
 
     }
     
