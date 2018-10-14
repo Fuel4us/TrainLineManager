@@ -1,6 +1,4 @@
-
 import java.util.ArrayList;
-import javafx.scene.Node;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -12,7 +10,9 @@ import javafx.scene.Node;
  *
  * @author Miura
  */
+
 public class Exercicios {
+
     public void numUtilizadores(ArrayList<Trip> list){
         int i;
         int j;
@@ -39,7 +39,7 @@ public class Exercicios {
         }
         i=0;
            for(Integer count: countList){
-			System.out.println("na estação "+ i++ +  " passaram " + count+ " pessoas" );
+			System.out.println("na estacao "+ i++ +  " passaram " + count+ " pessoas" );
 	   }
         
         
