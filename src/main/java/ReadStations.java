@@ -13,7 +13,7 @@ public class ReadStations {
     public static ArrayList<Station> stations = new ArrayList<>();
 
 
-    public static void ReadStation(String filePath, Line line) throws FileNotFoundException {
+    public static void ReadStation(String filePath) throws FileNotFoundException {
 
         Scanner scanner = new Scanner(new File(filePath));
 
@@ -28,10 +28,7 @@ public class ReadStations {
                 stations.add(station);
             }
         }
-        
-        
 
-       
         Collections.sort(stations,stationComp);
 
         int i;
@@ -45,9 +42,10 @@ public class ReadStations {
 
     }
     
-        public static Comparator<Station> stationComp = new Comparator<Station>() {
-        @Override
-        public int compare(Station station, Station station1)
+    public static Comparator<Station> stationComp = new Comparator<Station>() {
+
+    @Override
+    public int compare(Station station, Station station1)
         {
             return  station.getNum()-(station1.getNum());
         }

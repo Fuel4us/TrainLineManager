@@ -24,7 +24,7 @@ public class Station {
         return num;
     }
     
-        public String getZone() {
+    public String getZone() {
         return zone;
     }
 

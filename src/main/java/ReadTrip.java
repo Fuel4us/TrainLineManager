@@ -1,4 +1,3 @@
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -9,7 +8,7 @@ public class ReadTrip {
         public static ArrayList<Trip> tripList = new ArrayList<>();
 
     
-        public static void ReadTrip(String filePath, Line line) throws FileNotFoundException {
+        public static void ReadTrip(String filePath) throws FileNotFoundException {
 
         Scanner scanner = new Scanner(new File(filePath));
 

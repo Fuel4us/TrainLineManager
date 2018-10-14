@@ -8,7 +8,7 @@ public class TypeOfTicket {
         returnNumber(type);
     }
 
-    private void returnNumber(String type) {
+    public void returnNumber(String type) {
         if (type.equalsIgnoreCase("z1")) num = 1;
         if (type.equalsIgnoreCase("z2")) num = 2;
         if (type.equalsIgnoreCase("z3")) num = 3;
@@ -32,7 +32,6 @@ public class TypeOfTicket {
     public String toString() {
         return "TypeOfTicket{" +
                 "type='" + type + '\'' +
-                ", num=" + num +
                 '}';
     }
 }
