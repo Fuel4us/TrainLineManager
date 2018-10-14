@@ -10,12 +10,6 @@ public class Station {
         this.zone = zone;
     }
 
-    public Station(Station other) {
-        this.name = other.name;
-        this.num = other.num;
-        this.zone = other.zone;
-    }
-
     public String getName() {
         return name;
     }
