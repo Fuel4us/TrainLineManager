@@ -18,14 +18,14 @@ public class Exercicios {
         int j;
         ArrayList<Integer> countList = new ArrayList<>();
 
-        
+
         for(i=0;i<list.size();i++){
         if(list.get(0).getOriginStation()>list.get(0).getFinalStation()){
             j=list.get(i).getOriginStation();
             do{
                 countList.set(j, (countList.get(j)+1));
                 j--;
-                
+
                     }while(list.get(i).getFinalStation()== j);
         }
         else{
@@ -33,7 +33,7 @@ public class Exercicios {
             do{
                 countList.set(j, (countList.get(j)+1));
                 j++;
-                
+
                     }while(list.get(i).getFinalStation()== j);
         }
         }
@@ -41,10 +41,10 @@ public class Exercicios {
            for(Integer count: countList){
 			System.out.println("na estacao "+ i++ +  " passaram " + count+ " pessoas" );
 	   }
-        
-        
+
+
     }
-    
+
     public void sequencia(DoublyLinkedList<Station> list, TypeOfTicket type){
                 ArrayList<String> countList = new ArrayList<>();
                                 ArrayList<Integer> stationList = new ArrayList<>();
@@ -71,13 +71,13 @@ public class Exercicios {
             station = list.getNextNode(station);
             if(stationList.size()>finalStationList.size())
                 finalStationList=stationList;
-                } 
+                }
                   for(Integer count: finalStationList){
 			System.out.println(count + "\n" );
 	   }
-                
+
 }
-    
+
         public void transgressao(ArrayList<Trip> list){
         int i;
             for(i=0;i<list.size();i++){
