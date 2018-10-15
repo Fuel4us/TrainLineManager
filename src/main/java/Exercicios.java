@@ -77,7 +77,8 @@ public class Exercicios {
                     }
                     station = list.getNextNode(station);
                 } while (countList.size() < type.getNum() + 1); //repete ate ao maximo de esta�oes dentro do numero limite de zonas
-                System.out.println(station.getPrev().getElement().toString()); 
+                // --------------- x ----------------
+                System.out.println(station.getPrev().getElement().toString());
                 String temp = station.getElement().getZone(); // -> erro aqui pois esta no fim das stations
                 do {
                     station = list.getNextNode(station); //volta a calcular a maior sequencia para a primeira esta�ao da proxima zona
@@ -128,8 +129,8 @@ public class Exercicios {
                 countList.add(station.getElement().getZone());
                 do {
                     station = lista.getNextNode(station);
-
                     flag = 0;
+                    System.out.println(countList);
                     for (String listaa : countList) {
                         if (station.getElement().getZone().compareTo(listaa) == 0) {
                             flag = 1;
