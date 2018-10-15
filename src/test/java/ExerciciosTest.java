@@ -19,7 +19,6 @@ public class ExerciciosTest {
      */
     @Test
     public void testNumUtilizadores() throws FileNotFoundException {
-        System.out.println("numUtilizadores");
         ArrayList<Trip> list = readTrip.ReadTrip("./trips.txt");
         ArrayList<Integer> expected = new ArrayList<>();
         ArrayList<Integer> result = exercicios.numUtilizadores(list);
@@ -35,19 +34,17 @@ public class ExerciciosTest {
         assertEquals(expected, result);
     }
 
-    /**
-     * Test of sequencia method, of class Exercicios.
-     */
-    @Test
-    public void testSequencia() {
-        System.out.println("sequencia");
-        DoublyLinkedList<Station> list = null;
-        TypeOfTicket type = null;
-        Exercicios instance = new Exercicios();
-        instance.sequencia(list, type);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+//    /**
+//     * Test of sequencia method, of class Exercicios.
+//     */
+//    @Test
+//    public void testSequencia() {
+//        System.out.println("sequencia");
+//        DoublyLinkedList<Station> list = null;
+//        TypeOfTicket type = null;
+//        Exercicios instance = new Exercicios();
+//        instance.sequencia(list, type);
+//    }
 
 //    /**
 //     * Test of transgressao method, of class Exercicios.

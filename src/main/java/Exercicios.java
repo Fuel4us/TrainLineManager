@@ -132,6 +132,7 @@ public class Exercicios {
                     flag = 0;
                     System.out.println(countList);
                     for (String listaa : countList) {
+                      // -------------x-----------
                         if (station.getElement().getZone().compareTo(listaa) == 0) {
                             flag = 1;
                         }
