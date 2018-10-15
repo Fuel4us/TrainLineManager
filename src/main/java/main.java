@@ -6,7 +6,6 @@ import java.util.ArrayList;
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
- */
 /**
  *
  * @author mAniaK
@@ -26,7 +25,7 @@ public class main {
         exercicios.numUtilizadores(boas);
 
         // ex3
-        DoublyLinkedList<Station> station = readStation.ReadStation("./stations.txt");
+        //DoublyLinkedList<Station> station = readStation.ReadStation("./stations.txt");
         //exercicios.sequencia(station, type);
 
         // ex4
