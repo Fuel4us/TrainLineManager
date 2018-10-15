@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 
 /*
@@ -17,8 +18,8 @@ public class Exercicios {
         int j;
         ArrayList<Integer> countList = new ArrayList<>(); //armazena o numero de pessoas que passaram em cada esta�ao , cada esta�ao � assinalada pela posi�ao no vetor
 
-        for(int k = 0; k < 8; k++) {
-          countList.add(k, 0);
+        for (int k = 0; k < 8; k++) {
+            countList.add(k, 0);
         }
 
         for (i = 0; i < list.size(); i++) { //percorre a lista de trips
@@ -61,35 +62,37 @@ public class Exercicios {
         int flag = 0;
         for (i = 0; i < list.size(); i++) { //percorre a lista de stations
             countList.clear();
-        stationList.clear();
-        {
-            do {
-                flag = 0;
-                stationList.add(station.getElement().getNum()); //adiciona uma station a sequencia presente
-                for (String lista : countList) { //adiciona as zonas percorridas para o array
-                    if (station.getElement().getZone().compareTo(lista) == 0) {
-                        flag = 1;
+            stationList.clear();
+            {
+                do {
+                    flag = 0;
+                    stationList.add(station.getElement().getNum()); //adiciona uma station a sequencia presente
+                    for (String lista : countList) { //adiciona as zonas percorridas para o array
+                        if (station.getElement().getZone().compareTo(lista) == 0) {
+                            flag = 1;
+                        }
                     }
-                }
-                if (flag == 0) {
-                    countList.add(station.getElement().getZone()); //ou um contador simples
-                }
-                station = list.getNextNode(station);
-            } while (countList.size() < type.getNum() + 1); //repete ate ao maximo de esta�oes dentro do numero limite de zonas
-            String temp = station.getElement().getZone();
-            do{
-            station = list.getNextNode(station); //volta a calcular a maior sequencia para a primeira esta�ao da proxima zona
-            }while(station.getElement().getZone().compareTo(temp) != 0);
-            if (stationList.size() > finalStationList.size()) { //guarda a sequencia maior em finalStationList
-                                finalStationList = stationList;
+                    if (flag == 0) {
+                        countList.add(station.getElement().getZone()); //ou um contador simples
+                    }
+                    station = list.getNextNode(station);
+                } while (countList.size() < type.getNum() + 1); //repete ate ao maximo de esta�oes dentro do numero limite de zonas
+                System.out.println(station.getPrev().getElement().toString()); 
+                String temp = station.getElement().getZone(); // -> erro aqui pois esta no fim das stations
+                do {
+                    station = list.getNextNode(station); //volta a calcular a maior sequencia para a primeira esta�ao da proxima zona
+                } while (station.getElement().getZone().compareTo(temp) != 0);
+                if (stationList.size() > finalStationList.size()) { //guarda a sequencia maior em finalStationList
+                    finalStationList = stationList;
 
+                }
             }
-        }
-        for (Integer count : finalStationList) { //imprime a maior sequencia
-            System.out.println(count + "\n");
-        }
+            for (Integer count : finalStationList) { //imprime a maior sequencia
+                System.out.println(count + "\n");
+            }
 
-    }}
+        }
+    }
 
     public void transgressao(ArrayList<Trip> list, DoublyLinkedList<Station> lista) {
         DoublyLinkedList.Node<Station> station = lista.getFirstNode().getPrev();
