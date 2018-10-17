@@ -1,0 +1,8 @@
+/nbproject/
+
+# Git ignore .idea
+
+*.idea/*
+.idea/
+.idea/*
+/target/

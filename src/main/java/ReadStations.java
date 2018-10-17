@@ -18,7 +18,7 @@ public class ReadStations {
         Scanner scanner = new Scanner(new File(filePath));
 
         while(scanner.hasNextLine()) {
-            String[] aux = scanner.nextLine().split(";");
+            String[] aux = scanner.nextLine().split(",");
 
             if(aux.length==3) {
                 int numStation = Integer.parseInt(aux[0]);
@@ -32,22 +32,22 @@ public class ReadStations {
         Collections.sort(stations,stationComp);
 
         int i;
-        
-        
+
+
         for(i=0;i<stations.size();i++){
         doubleLinkedList.addFirst(stations.get(i));
         }
-        
+
         return doubleLinkedList;
 
     }
-    
+
     public static Comparator<Station> stationComp = new Comparator<Station>() {
 
     @Override
     public int compare(Station station, Station station1)
         {
-            return  station.getNum()-(station1.getNum());
+            return  station1.getNum()-(station.getNum());
         }
         };
 }
