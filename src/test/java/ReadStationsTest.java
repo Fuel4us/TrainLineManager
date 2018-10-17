@@ -14,7 +14,7 @@ public class ReadStationsTest {
 
     @Test
     public void readStation() throws FileNotFoundException {
-        Station expected = new Station("Casa da Musica", 7, "C1");
+        Station expected = new Station("Hospital de S.Joao", 1, "C1");
         doublyLinkedList = readStations.ReadStation("./stations.txt");
         assertEquals(expected.toString(), doublyLinkedList.getFirstNode().getElement().toString());
     }

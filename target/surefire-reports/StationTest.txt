@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: StationTest
 -------------------------------------------------------------------------------
-<<<<<<< HEAD
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec
-=======
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
->>>>>>> b5435b3cb39c4ca28bc7d3a2f06542fb7728c1ee
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec
