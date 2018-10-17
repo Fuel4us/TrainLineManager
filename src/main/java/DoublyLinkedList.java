@@ -83,6 +83,9 @@ public class DoublyLinkedList<E> implements Iterable<E>, Cloneable {
                 public Node<E> getFirstNode() {
         return header.next;
     }
+                                public Node<E> getLastNode() {
+        return trailer.prev;
+    }
 
 // public update methods
     /**

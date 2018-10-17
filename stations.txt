@@ -2,6 +2,6 @@
 1,Hospital de S.Joao,C1 
 7,Casa da Musica,C4
 6,Trindade,C4
-5,Sete Bicas,C4
+5,Sete Bicas,C3
 3,Ramalde,C2
 4,Polo Universitario,C1

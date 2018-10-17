@@ -18,15 +18,15 @@ public class main {
         ReadTrip readTrip = new ReadTrip();
         ReadStations readStation = new ReadStations();
 
-        TypeOfTicket type = new TypeOfTicket("Z3");
+        TypeOfTicket type = new TypeOfTicket("Z2");
 
         // ex2
         ArrayList<Trip> boas = readTrip.ReadTrip("./trips.txt");
         exercicios.numUtilizadores(boas);
 
         // ex3
-        //DoublyLinkedList<Station> station = readStation.ReadStation("./stations.txt");
-        //exercicios.sequencia(station, type);
+        DoublyLinkedList<Station> station = readStation.ReadStation("./stations.txt");
+        exercicios.sequencia(station, type);
 
         // ex4
         //exercicios.transgressao(boas, station);

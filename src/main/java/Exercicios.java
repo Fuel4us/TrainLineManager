@@ -60,33 +60,36 @@ public class Exercicios {
         DoublyLinkedList.Node<Station> station = list.getFirstNode();
         int i;
         int flag = 0;
-        for (i = 0; i < list.size(); i++) { //percorre a lista de stations
+        for (i = 0; i < list.size()-1; i++) { //percorre a lista de stations
             countList.clear();
             stationList.clear();
+            String temp = station.getElement().getZone(); // -> erro aqui pois esta no fim das stations
+
             {
-                do {
+                while (countList.size() < type.getNum() + 1 || list.getLastNode().getElement().getZone().compareTo(station.getElement().getZone())==0) { //repete ate ao maximo de esta�oes dentro do numero limite de zonas
                     flag = 0;
                     stationList.add(station.getElement().getNum()); //adiciona uma station a sequencia presente
                     for (String lista : countList) { //adiciona as zonas percorridas para o array
-                        if (station.getElement().getZone().compareTo(lista) == 0) {
+                        if (station.getElement().getZone().compareToIgnoreCase(lista) == 0) 
                             flag = 1;
-                        }
                     }
                     if (flag == 0) {
                         countList.add(station.getElement().getZone()); //ou um contador simples
                     }
                     station = list.getNextNode(station);
-                } while (countList.size() < type.getNum() + 1); //repete ate ao maximo de esta�oes dentro do numero limite de zonas
-                // --------------- x ----------------
-                System.out.println(station.getPrev().getElement().toString());
-                String temp = station.getElement().getZone(); // -> erro aqui pois esta no fim das stations
-                do {
-                    station = list.getNextNode(station); //volta a calcular a maior sequencia para a primeira esta�ao da proxima zona
-                } while (station.getElement().getZone().compareTo(temp) != 0);
+                }
                 if (stationList.size() > finalStationList.size()) { //guarda a sequencia maior em finalStationList
                     finalStationList = stationList;
 
                 }
+                station = list.getFirstNode();
+                while (station.getElement().getZone().compareTo(temp) != 0 || list.getLastNode().getElement().getZone().compareTo(station.getElement().getZone())==0) {
+                    station = list.getNextNode(station); //volta a calcular a maior sequencia para a primeira esta�ao da proxima zona
+                } 
+                 while (station.getElement().getZone().compareTo(temp) == 0 ||list.getLastNode().getElement().getZone().compareTo(station.getElement().getZone())==0) {
+                    station = list.getNextNode(station); //volta a calcular a maior sequencia para a primeira esta�ao da proxima zona
+                }
+
             }
             for (Integer count : finalStationList) { //imprime a maior sequencia
                 System.out.println(count + "\n");
@@ -130,9 +133,7 @@ public class Exercicios {
                 do {
                     station = lista.getNextNode(station);
                     flag = 0;
-                    System.out.println(countList);
                     for (String listaa : countList) {
-                      // -------------x-----------
                         if (station.getElement().getZone().compareTo(listaa) == 0) {
                             flag = 1;
                         }

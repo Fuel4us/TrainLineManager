@@ -47,7 +47,7 @@ public class ReadStations {
     @Override
     public int compare(Station station, Station station1)
         {
-            return  station.getNum()-(station1.getNum());
+            return  station1.getNum()-(station.getNum());
         }
         };
 }
