@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7242916-68d8-4288-ac0b-2b31a597992e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ReadStationsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReadStations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReadStations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Station.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Station.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/DoublyLinkedListTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/DoublyLinkedListTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/StationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/StationTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-DoublyLinkedListTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-DoublyLinkedListTest.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b7242916-68d8-4288-ac0b-2b31a597992e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/../2018 PL's/PL2_Generics_initial/test/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,8 +46,8 @@
           <file leaf-file-name="Exercicios.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/Exercicios.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="27" selection-start-column="27" selection-end-column="27" />
+                <state relative-caret-position="15">
+                  <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
                 </state>
               </provider>
             </entry>
@@ -356,7 +347,7 @@
       <workItem from="1539263749554" duration="4822000" />
       <workItem from="1539275925964" duration="1405000" />
       <workItem from="1539357738567" duration="4525000" />
-      <workItem from="1539544823428" duration="5194000" />
+      <workItem from="1539544823428" duration="5688000" />
     </task>
     <task id="LOCAL-00001" summary="Deleted main no need for it and added dependecies :zap:">
       <created>1539271225106</created>
@@ -411,7 +402,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16971000" />
+    <option name="totallyTimeSpent" value="17465000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -735,8 +726,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Exercicios.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        <state relative-caret-position="15">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
         </state>
       </provider>
     </entry>

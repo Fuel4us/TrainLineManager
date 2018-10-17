@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 -------------------------------------------------------------------------------
 Test set: DoublyLinkedListTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
-=======
--------------------------------------------------------------------------------
-Test set: DoublyLinkedListTest
--------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec
->>>>>>> 60405d3521523ee76a4a47ab75fa91d3d4d5b698
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
